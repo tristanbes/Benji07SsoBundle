@@ -23,6 +23,10 @@
             <argument type="collection"></argument>
         </service>
 
+        <service id="gamercertified.provider.maniaplanet" class="GamerCertified\ShootmaniaBundle\Api\ManiaplanetProvider">
+            <argument type="collection"></argument>
+        </service>
+
     </services>
 
 </container>
