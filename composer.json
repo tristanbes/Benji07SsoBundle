@@ -14,7 +14,7 @@
         "php": ">=5.3.2",
         "symfony/framework-bundle": ">=2.1,<2.3-dev",
         "sensio/buzz-bundle": "*",
-        "fp/lightopenid": "dev-master"
+        "fp/lightopenid": "2.7.*"
     },
 
     "autoload": {
