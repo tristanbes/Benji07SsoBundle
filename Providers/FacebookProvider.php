@@ -24,6 +24,8 @@ class FacebookProvider extends OAuth2Provider
     public function getUserData()
     {
         $data = parent::getUserData();
+        // graph 2.3 change
+        $data = json_decode(key($data), true);
 
         if (isset($data['access_token'])) {
             $parameters = array(
