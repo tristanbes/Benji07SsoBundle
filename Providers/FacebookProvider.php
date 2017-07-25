@@ -30,7 +30,7 @@ class FacebookProvider extends OAuth2Provider
         if (isset($data['access_token'])) {
             $parameters = array(
                 'access_token' => $data['access_token'],
-                'fields'       => 'email,name',
+                'fields'       => 'email,name,first_name,last_name,location',
             );
 
             $url = $this->getOption('profileUrl') . '?' . http_build_query($parameters);
